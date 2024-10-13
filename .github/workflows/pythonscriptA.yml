@@ -4,9 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
+      - name: RunPythonScript
         run: |
           a = 3
           b = 7
           print(f"Hello Python {a + b} World!")
+          return 1
         shell: python
